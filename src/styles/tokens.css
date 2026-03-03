@@ -1,0 +1,38 @@
+:root {
+  color-scheme: dark;
+
+  --bg-0: #070b1a;
+  --bg-1: #0b1026;
+  --card: rgba(14, 21, 45, 0.68);
+  --border: rgba(255, 255, 255, 0.09);
+  --text: #e5ecff;
+  --muted: #a5b2d6;
+
+  --accent-1: #3b82f6;
+  --accent-2: #7c3aed;
+  --accent-grad: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+
+  --font-sans: "Inter", "Segoe UI", "Manrope", system-ui, -apple-system, sans-serif;
+  --font-display: "Sora", "Space Grotesk", "Inter", sans-serif;
+
+  --h1: clamp(2.4rem, 5vw, 4.2rem);
+  --h2: clamp(1.8rem, 3.2vw, 3rem);
+  --h3: clamp(1.25rem, 2.2vw, 1.7rem);
+  --body: clamp(1rem, 1.2vw, 1.07rem);
+
+  --r-lg: 18px;
+  --r-xl: 22px;
+
+  --shadow-1: 0 14px 36px rgba(0, 0, 0, 0.28);
+  --shadow-2: 0 24px 60px rgba(4, 8, 26, 0.48);
+
+  --dur-1: 180ms;
+  --dur-2: 420ms;
+  --dur-3: 650ms;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-inout: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --container: min(1240px, calc(100vw - 2.4rem));
+  --section-y: clamp(5rem, 10vw, 7.5rem);
+  --bg-shift: 0%;
+}
