@@ -1,24 +1,24 @@
 {
   "profile": {
     "name": "Marcos Menezes",
-    "role": "Robotics & Cloud & AI",
-    "tagline": "Experiências práticas com essas áreas",
+    "role": "Estudante de Engenharia da Computação",
+    "tagline": "AWS Cloud Club Captain",
     "availability": {
       "enabled": true,
-      "text": "Disponível para novos projetos"
+      "text": "🟢 Disponível para novos projetos"           
     },
     "heroDescription": "Transformo ideias em produtos digitais escaláveis com foco em performance, design de interação e excelência técnica do frontend ao backend.",
-    "heroTags": ["TypeScript", "Web Platform", "Cloud Native", "Motion UI", "Design System"],
-    "photoUrl": "/assets/profile.svg",
+    "heroTags": ["AWS", "Cloud Computing", "Artificial Intelligence", "Robotics", "ROS 2","Gazebo","Vibe Coding", "Python", "C", "C++"],
+    "photoUrl": "/assets/profile.png",
     "social": {
       "github": "https://github.com/MarcosMenezes30",
-      "linkedin": "https://linkedin.com/in/henriqzimer",
-      "email": "mailto:henrique@exemplo.com",
-      "instagram": "https://instagram.com/henriqzimer",
-      "website": "https://henriqzimer.dev"
+      "linkedin": "www.linkedin.com/in/marcos-menezes-27354a263",
+      "email": "mailto:marcos.p.filho@aln.senaicimatec.edu.br",
+      "instagram": "https://instagram.com/menezss.marcos",
+      "website": "https://marcostelesdemenezes.vercel.app/"
     },
     "whatsapp": {
-      "number": "5571999998888",
+      "number": "5571992782161",
       "message": "Olá! Vim pelo seu site e gostaria de conversar sobre um projeto."
     }
   },
@@ -35,26 +35,26 @@
     "cta": { "label": "Fale Comigo", "mode": "whatsapp" }
   },
   "metricsHero": [
-    { "label": "Anos de Experiência", "value": 8, "suffix": "+", "icon": "clock" },
-    { "label": "Projetos Entregues", "value": 57, "suffix": "+", "icon": "code" },
-    { "label": "Certificações", "value": 14, "suffix": "+", "icon": "award" },
-    { "label": "Satisfação de Clientes", "value": 98, "suffix": "%", "icon": "rocket" }
+    { "label": "Anos de Experiência", "value": 2, "suffix": "+", "icon": "clock" },
+    { "label": "Projetos Entregues", "value": 10, "suffix": "+", "icon": "code" },
+    { "label": "Certificações", "value": 5, "suffix": "+", "icon": "award" },
+    { "label": "Satisfação de Clientes", "value": 98, "suffix": "%", "icon": "rocke" }
   ],
   "aboutCards": [
     {
       "title": "Minha História",
       "icon": "history",
-      "text": "Iniciei na infraestrutura e automação, migrando para desenvolvimento de produtos digitais completos com foco em impacto real para negócios."
+      "text": "Comecei estudando programação de maneira autodidata , hoje direciono meus estudos com foco em tecnologias emergentes, como AWS, IA e Machine Learning, com o objetivo de criar soluções que tenham impacto real para negócios."
     },
     {
       "title": "Presente",
       "icon": "settings",
-      "text": "Hoje lidero frentes de engenharia full-stack, desenho de arquitetura e implementação de interfaces de alta qualidade com governança técnica."
+      "text": "Hoje, além de ser universitário, lidero o AWS Cloud Club do SENAI CIMATEC, onde tenho me capacitado para organizar eventos, workshops e mentorias para compartilhar conhecimento sobre computação em nuvem e tecnologias AWS."
     },
     {
       "title": "Futuro",
       "icon": "rocket",
-      "text": "Estou expandindo atuação em produtos cloud-native, experiência de desenvolvedor e sistemas orientados a eventos com alta observabilidade."
+      "text": "Estou me especializando em inteligência artificial e computação em nuvem AWS, com o objetivo de criar soluções inovadoras que alavanquem a eficiência e conseguir certificações AWS para me destacrar no mercado."
     }
   ],
   "values": [
@@ -171,14 +171,11 @@
     ]
   },
   "skills": [
-    { "name": "TypeScript", "iconUrl": "/assets/skills/typescript.svg", "description": "Aplicações robustas e tipadas" },
-    { "name": "Web Components", "iconUrl": "/assets/skills/web-components.svg", "description": "UI nativa e reutilizável" },
-    { "name": "Kubernetes", "iconUrl": "/assets/skills/kubernetes.svg", "description": "Orquestração em produção" },
-    { "name": "Docker", "iconUrl": "/assets/skills/docker.svg", "description": "Empacotamento e runtime" },
-    { "name": "Terraform", "iconUrl": "/assets/skills/terraform.svg", "description": "Infraestrutura como código" },
-    { "name": "GitHub Actions", "iconUrl": "/assets/skills/github-actions.svg", "description": "Automação de entrega" },
-    { "name": "Node.js", "iconUrl": "/assets/skills/nodejs.svg", "description": "Backends performáticos" },
-    { "name": "PostgreSQL", "iconUrl": "/assets/skills/postgresql.svg", "description": "Dados com confiabilidade" }
+    { "name": "AWS", "iconUrl": "/assets/skills/aws-icon.png", "description": "Tecnologias e serviços AWS" },
+    { "name": "Docker", "iconUrl": "/assets/skills/docker-icon.png", "description": "Utilização de contêineres" },
+    { "name": "Git/GitHub", "iconUrl": "/assets/skills/github-icon.png", "description": "Versionamento de código e documentação" },
+    { "name": "ROS 2", "iconUrl": "/assets/skills/ros2-icon.png", "description": "Framework para desenvolvimento de robôs" },
+    { "name": "CI/CD", "iconUrl": "/assets/skills/cicd-icon.png", "description": "Pipelines de integração e entrega contínua" }
   ],
   "certifications": [
     {

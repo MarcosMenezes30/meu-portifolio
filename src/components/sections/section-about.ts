@@ -71,7 +71,7 @@ export class SectionAbout extends HTMLElement {
       <section-title
         eyebrow="Sobre mim"
         title="Minha jornada e evolução"
-        highlight="jornada"
+        highlight="jornada e evolução"
         subtitle="Da infraestrutura à engenharia de produto: visão ponta a ponta para entregar software com propósito."
         data-reveal
       ></section-title>

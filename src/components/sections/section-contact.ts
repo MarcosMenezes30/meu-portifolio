@@ -143,7 +143,7 @@ export class SectionContact extends HTMLElement {
       <section-title
         eyebrow="Contato"
         title="Interessado em trabalhar comigo"
-        highlight="trabalhar"
+        highlight="trabalhar comigo"
         subtitle="Envie sua ideia, desafio ou proposta. Retorno rápido com próximos passos e estimativas."
         data-reveal
       ></section-title>

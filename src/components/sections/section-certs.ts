@@ -82,10 +82,10 @@ export class SectionCerts extends HTMLElement {
 
     section.innerHTML = `
       <section-title
-        eyebrow="Certificações"
-        title="Credenciais verificáveis"
-        highlight="verificáveis"
-        subtitle="Certificações que validam atuação prática em cloud, plataforma e engenharia de software."
+        eyebrow="certificações"
+        title="Futuras certificações"
+        highlight="Futuras"
+        subtitle="Certificações que estou estudando para me certificar em 2026."
         data-reveal
       ></section-title>
       <div class="grid">

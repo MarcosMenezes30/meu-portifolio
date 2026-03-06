@@ -76,7 +76,7 @@ export class SectionValues extends HTMLElement {
       <section-title
         eyebrow="Princípios"
         title="O que me move na engenharia"
-        highlight="move"
+        highlight="move na engenharia"
         subtitle="Critérios que guiam decisões técnicas, produto e colaboração em cada entrega."
         data-reveal
       ></section-title>
