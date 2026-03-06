@@ -1075,10 +1075,10 @@ p {
 }
 `;class se extends HTMLElement{shadowRootRef=this.attachShadow({mode:"open"});data=null;cleanupReveal=null;set siteData(e){this.data=e,this.render()}connectedCallback(){this.render()}disconnectedCallback(){this.cleanupReveal?.()}render(){if(!this.data)return;this.cleanupReveal?.(),this.shadowRootRef.innerHTML="",l(this.shadowRootRef,ie);const e=document.createElement("section");e.className="section",e.innerHTML=`
       <section-title
-        eyebrow="Certificações"
-        title="Credenciais verificáveis"
-        highlight="verificáveis"
-        subtitle="Certificações que validam atuação prática em cloud, plataforma e engenharia de software."
+        eyebrow="Futuras"
+        title="Futuras certificações"
+        highlight="certificações"
+        subtitle="Certificações que estou estudando para me certificar em 2026."
         data-reveal
       ></section-title>
       <div class="grid">
