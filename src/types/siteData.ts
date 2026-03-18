@@ -56,6 +56,7 @@ export interface ProjectItem {
   techTags: string[];
   imageUrl: string;
   repoUrl: string;
+  liveUrl?: string;
   featured: boolean;
 }
 

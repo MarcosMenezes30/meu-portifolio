@@ -50,3 +50,9 @@ async function bootstrap(): Promise<void> {
 }
 
 void bootstrap();
+
+if (import.meta.hot) {
+  import.meta.hot.accept(['./services/siteData'], () => {
+    void bootstrap();
+  });
+}

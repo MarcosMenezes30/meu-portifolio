@@ -118,24 +118,6 @@ h1 {
 .orb:nth-child(2) { right: -1rem; top: 50%; transform: translateY(-50%); }
 .orb:nth-child(3) { left: 50%; bottom: -1.1rem; transform: translateX(-50%); }
 .orb:nth-child(4) { left: -1rem; top: 50%; transform: translateY(-50%); }
-.socials {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.65rem;
-}
-.socials a {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  display: grid;
-  place-items: center;
-  background: rgba(255, 255, 255, 0.02);
-}
-.socials a:hover {
-  animation: breath 2.2s ease-in-out infinite;
-}
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -298,20 +280,14 @@ export class SectionHero extends HTMLElement {
 
     right.innerHTML = `
       <div class="ring" aria-hidden="true">
-        <span class="orb"><icon-svg name="cpu" size="17"></icon-svg></span>
         <span class="orb"><icon-svg name="code" size="17"></icon-svg></span>
-        <span class="orb"><icon-svg name="rocket" size="17"></icon-svg></span>
-        <span class="orb"><icon-svg name="settings" size="17"></icon-svg></span>
+        <span class="orb"><icon-svg name="aws" size="17"></icon-svg></span>
+        <span class="orb"><icon-svg name="robot" size="17"></icon-svg></span>
+        <span class="orb"><icon-svg name="brain" size="17"></icon-svg></span>
       </div>
       <figure class="photo-wrap">
         <img src="${profile.photoUrl}" alt="Foto de ${profile.name}" />
       </figure>
-      <div class="socials">
-        <a href="${profile.social.github}" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><icon-svg name="code" size="16"></icon-svg></a>
-        <a href="${profile.social.linkedin}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><icon-svg name="users" size="16"></icon-svg></a>
-        <a href="${profile.social.email}" aria-label="Enviar e-mail"><icon-svg name="mail" size="16"></icon-svg></a>
-        <a href="#" id="hero-wa" aria-label="WhatsApp"><icon-svg name="whatsapp" size="16"></icon-svg></a>
-      </div>
     `;
 
     wrap.append(left, right);
@@ -319,10 +295,6 @@ export class SectionHero extends HTMLElement {
 
     this.shadowRootRef.getElementById('btn-contact')?.addEventListener('click', () => this.navigate('contato'));
     this.shadowRootRef.getElementById('btn-projects')?.addEventListener('click', () => this.navigate('projetos'));
-    this.shadowRootRef.getElementById('hero-wa')?.addEventListener('click', (event) => {
-      event.preventDefault();
-      this.openWhatsapp();
-    });
 
     const counterElements = Array.from(this.shadowRootRef.querySelectorAll<HTMLElement>('[data-counter]'));
     this.cleanupCounter = setupCounters(

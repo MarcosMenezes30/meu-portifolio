@@ -98,6 +98,14 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.13);
   font-size: 0.75rem;
 }
+.btn-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.btn-group base-button {
+  flex: 0;
+}
 .controls {
   margin-top: 0.95rem;
   display: flex;
@@ -279,7 +287,7 @@ export class SectionProjects extends HTMLElement {
                     ${page
                       .map(
                         (project) => `
-                          <base-card interactive breath>
+                          <base-card>
                             <article>
                               <figure>
                                 <img src="${project.imageUrl}" alt="Projeto ${project.title}" loading="lazy" />
@@ -289,7 +297,10 @@ export class SectionProjects extends HTMLElement {
                               <div class="tags">
                                 ${project.techTags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
                               </div>
-                              <base-button variant="outline" data-repo="${project.repoUrl}">Código</base-button>
+                              <div class="btn-group">
+                                <base-button variant="outline" data-repo="${project.repoUrl}">Código</base-button>
+                                ${project.liveUrl ? `<base-button variant="outline" data-live="${project.liveUrl}">Resultado</base-button>` : ''}
+                              </div>
                             </article>
                           </base-card>
                         `,
@@ -353,6 +364,13 @@ export class SectionProjects extends HTMLElement {
     this.shadowRootRef.querySelectorAll<HTMLElement>('base-button[data-repo]').forEach((button) => {
       button.addEventListener('click', () => {
         const url = button.getAttribute('data-repo');
+        if (url) this.openRepo(url);
+      });
+    });
+
+    this.shadowRootRef.querySelectorAll<HTMLElement>('base-button[data-live]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const url = button.getAttribute('data-live');
         if (url) this.openRepo(url);
       });
     });

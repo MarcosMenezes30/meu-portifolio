@@ -7,8 +7,8 @@
       "enabled": true,
       "text": "🟢 Disponível para novos projetos"           
     },
-    "heroDescription": "Transformo ideias em produtos digitais escaláveis com foco em performance, design de interação e excelência técnica do frontend ao backend.",
-    "heroTags": ["AWS", "Cloud Computing", "Artificial Intelligence", "Robotics", "ROS 2","Gazebo","Vibe Coding", "Python", "C", "C++"],
+    "heroDescription": "Transformo ideias em produtos digitais completos. Construo plataformas full stack com foco em qualidade, performance e experiência do usuário, do frontend ao backend.",
+    "heroTags": ["Full Stack", "React", "Node.js", "TypeScript", "Integração PIX", "Web Components", "Design", "Performance", "Lider do AWS Cloud Club"],
     "photoUrl": "/assets/profile.png",
     "social": {
       "github": "https://github.com/MarcosMenezes30",
@@ -36,25 +36,25 @@
   },
   "metricsHero": [
     { "label": "Anos de Experiência", "value": 2, "suffix": "+", "icon": "clock" },
-    { "label": "Projetos Entregues", "value": 10, "suffix": "+", "icon": "code" },
-    { "label": "Certificações", "value": 5, "suffix": "+", "icon": "award" },
-    { "label": "Satisfação de Clientes", "value": 98, "suffix": "%", "icon": "rocke" }
+    { "label": "Projetos Entregues", "value": 3, "suffix": "", "icon": "code" },
+    { "label": "Em Desenvolvimento", "value": 2, "suffix": "", "icon": "rocket" },
+    { "label": "Comunidade AWS Liderada", "value": 1, "suffix": "", "icon": "users" }
   ],
   "aboutCards": [
     {
       "title": "Minha História",
       "icon": "history",
-      "text": "Comecei estudando programação de maneira autodidata , hoje direciono meus estudos com foco em tecnologias emergentes, como AWS, IA e Machine Learning, com o objetivo de criar soluções que tenham impacto real para negócios."
+      "text": "Estudante de Engenharia da Computação na SENAI CIMATEC com paixão por desenvolvimento de software. Comecei praticando com projetos pessoais e evoluí para soluções completas que entregam valor real e impacto para negócios."
     },
     {
       "title": "Presente",
       "icon": "settings",
-      "text": "Hoje, além de ser universitário, lidero o AWS Cloud Club do SENAI CIMATEC, onde tenho me capacitado para organizar eventos, workshops e mentorias para compartilhar conhecimento sobre computação em nuvem e tecnologias AWS."
+      "text": "Desenvolvo produtos digitais full stack com foco em qualidade e performance. Líder do AWS Cloud Club SENAI CIMATEC, onde compartilho conhecimento sobre computação em nuvem e coordeno eventos e mentorias para a comunidade."
     },
     {
       "title": "Futuro",
       "icon": "rocket",
-      "text": "Estou me especializando em inteligência artificial e computação em nuvem AWS, com o objetivo de criar soluções inovadoras que alavanquem a eficiência e conseguir certificações AWS para me destacrar no mercado."
+      "text": "Especializando-me em desenvolvimento de plataformas escaláveis e arquiteturas de software robustas. Objetivo crescer como engenheiro full stack e continuar criando soluções inovadoras que levem impacto positivo e gerem valor."
     }
   ],
   "values": [
@@ -92,81 +92,64 @@
   "projects": {
     "categories": [
       { "id": "all", "label": "Todos" },
-      { "id": "kubernetes", "label": "Kubernetes" },
-      { "id": "pipeline", "label": "Pipeline" },
-      { "id": "docker", "label": "Docker" },
-      { "id": "programacao", "label": "Programação" }
+      { "id": "concluidoOuEmDesenvolvimento", "label": "Concluído" },
+      { "id": "emDesenvolvimento", "label": "Em Desenvolvimento" },
+      { "id": "fullstack", "label": "Full Stack" },
+      { "id": "frontend", "label": "Frontend" }
     ],
     "items": [
       {
         "id": "proj-1",
-        "title": "kubernetes-homelab-infrastructure",
-        "description": "Provisionamento declarativo de cluster com GitOps, observabilidade e políticas de segurança by default.",
-        "categoryIds": ["kubernetes", "docker"],
-        "techTags": ["Kubernetes", "Helm", "Terraform", "ArgoCD"],
-        "imageUrl": "/assets/projects/p1.svg",
-        "repoUrl": "https://github.com/MarcosMenezes30/kubernetes-homelab-infrastructure",
+        "title": "AWS Cloud Club SENAI CIMATEC - Website",
+        "description": "Site oficial do AWS Cloud Club, vitrine da comunidade de estudos em computação em nuvem com foco em tecnologias AWS e eventos educacionais.",
+        "categoryIds": ["concluidoOuEmDesenvolvimento", "frontend"],
+        "techTags": ["Frontend", "Design", "Web Components"],
+        "imageUrl": "/assets/projects/aws-wb.png",
+        "repoUrl": "https://github.com/MarcosMenezes30/aws-cloud-club-senai-cimatec-website",
+        "liveUrl": "https://awsclubsenai.com.br",
         "featured": true
       },
       {
         "id": "proj-2",
-        "title": "ci-cd-blueprint",
-        "description": "Pipeline CI/CD com quality gates, scan de segurança e deploy progressivo para múltiplos ambientes.",
-        "categoryIds": ["pipeline", "docker"],
-        "techTags": ["GitHub Actions", "Docker", "Trivy", "Kustomize"],
-        "imageUrl": "/assets/projects/p2.svg",
-        "repoUrl": "https://github.com/MarcosMenezes30/ci-cd-blueprint",
+        "title": "Portfólio Pessoal",
+        "description": "Portfólio web com design moderno e performance otimizada, construído com Web Components e TypeScript. Showcase de projetos, skills e certificações.",
+        "categoryIds": ["concluidoOuEmDesenvolvimento", "frontend"],
+        "techTags": ["Web Components", "TypeScript", "Performance"],
+        "imageUrl": "/assets/projects/portifolio.png",
+        "repoUrl": "https://github.com/MarcosMenezes30/meu-portifolio",
+        "liveUrl": "https://marcostelesdemenezes.vercel.app",
         "featured": true
       },
       {
         "id": "proj-3",
-        "title": "design-system-foundation",
-        "description": "Design system modular com tokens, componentes web e documentação para escalar produtos digitais.",
-        "categoryIds": ["programacao"],
-        "techTags": ["Web Components", "TypeScript", "Storybook"],
-        "imageUrl": "/assets/projects/p3.svg",
-        "repoUrl": "https://github.com/MarcosMenezes30/design-system-foundation",
+        "title": "Landing Page - Instrumentos Médicos",
+        "description": "Landing page responsiva e de alta conversão para empresa de venda de instrumentos médicos, com design profissional e otimização para SEO.",
+        "categoryIds": ["concluidoOuEmDesenvolvimento", "frontend"],
+        "techTags": ["Frontend", "Responsivo", "SEO"],
+        "imageUrl": "/assets/projects/instmed.png",
+        "repoUrl": "https://github.com/MarcosMenezes30/precision-med-solutions",
+        "liveUrl": "https://jcimplantes.lovable.app/",
         "featured": true
       },
       {
         "id": "proj-4",
-        "title": "observability-hub",
-        "description": "Stack de observabilidade com métricas, logs e tracing para diagnóstico rápido de incidentes.",
-        "categoryIds": ["kubernetes"],
-        "techTags": ["Prometheus", "Grafana", "Loki", "Tempo"],
-        "imageUrl": "/assets/projects/p4.svg",
-        "repoUrl": "https://github.com/MarcosMenezes30/observability-hub",
-        "featured": false
-      },
-      {
-        "id": "proj-5",
-        "title": "docker-dev-experience",
-        "description": "Template de ambiente local com Docker Compose para onboarding rápido e paridade com produção.",
-        "categoryIds": ["docker", "pipeline"],
-        "techTags": ["Docker Compose", "Makefile", "Nginx"],
-        "imageUrl": "/assets/projects/p5.svg",
-        "repoUrl": "https://github.com/MarcosMenezes30/docker-dev-experience",
-        "featured": false
-      },
-      {
-        "id": "proj-6",
-        "title": "edge-api-gateway",
-        "description": "Gateway de APIs com autenticação, rate limiting e cache para melhorar latência e segurança.",
-        "categoryIds": ["programacao"],
-        "techTags": ["Node.js", "TypeScript", "Redis", "OpenTelemetry"],
-        "imageUrl": "/assets/projects/p6.svg",
-        "repoUrl": "https://github.com/MarcosMenezes30/edge-api-gateway",
+        "title": "Plataforma de Estudos",
+        "description": "Plataforma educacional completa com banco de dados robusto, sistema de controle de telas, pagamento via PIX integrado e dashboard de balanço financeiro. Inclui visualizações diferenciadas para administrador e cliente.",
+        "categoryIds": ["emDesenvolvimento", "fullstack"],
+        "techTags": ["Node.js", "TypeScript", "React", "Supabase", "PIX", "Dashboard"],
+        "imageUrl": "/assets/projects/embreve.png",
+        "repoUrl": "https://github.com/MarcosMenezes30",
         "featured": true
       },
       {
-        "id": "proj-7",
-        "title": "platform-runbooks",
-        "description": "Repositório de runbooks operacionais para SRE com automações e playbooks de resposta a incidentes.",
-        "categoryIds": ["kubernetes", "pipeline"],
-        "techTags": ["SRE", "Runbook", "Automation"],
-        "imageUrl": "/assets/projects/p7.svg",
-        "repoUrl": "https://github.com/MarcosMenezes30/platform-runbooks",
-        "featured": false
+        "id": "proj-5",
+        "title": "Plataforma de Barbearia",
+        "description": "Sistema completo para gerenciamento de barbearia com integração de pagamento PIX, controle de agendamentos, emissão de notas fiscais, dashboard de balanço financeiro e painéis separados para administrador e usuário cliente.",
+        "categoryIds": ["emDesenvolvimento", "fullstack"],
+        "techTags": ["Node.js", "TypeScript", "React", "Supabase", "PIX", "Agendamentos"],
+        "imageUrl": "/assets/projects/embreve.png",
+        "repoUrl": "https://github.com/MarcosMenezes30",
+        "featured": true
       }
     ]
   },
@@ -175,70 +158,80 @@
     { "name": "Docker", "iconUrl": "/assets/skills/docker-icon.png", "description": "Utilização de contêineres" },
     { "name": "Git/GitHub", "iconUrl": "/assets/skills/github-icon.png", "description": "Versionamento de código e documentação" },
     { "name": "ROS 2", "iconUrl": "/assets/skills/ros2-icon.png", "description": "Framework para desenvolvimento de robôs" },
-    { "name": "CI/CD", "iconUrl": "/assets/skills/cicd-icon.png", "description": "Pipelines de integração e entrega contínua" }
+    { "name": "Supabase", "iconUrl": "/assets/skills/supabase-icon.jpg", "description": "Backend para o desenvolvimento de aplicações web" }
   ],
   "certifications": [
     {
-      "title": "Google Cloud Associate Cloud Engineer",
-      "issuer": "Google Cloud",
-      "date": "2026-02",
-      "badgeUrl": "/assets/certs/gcp.svg",
-      "verifyUrl": "https://example.com/verify/gcp-ace"
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "AWS Academy",
+      "date": " ",
+      "badgeUrl": "/assets/certs/CLF.png",
+      "verifyUrl": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
     },
     {
-      "title": "AWS Certified Developer - Associate",
-      "issuer": "Amazon Web Services",
-      "date": "2025-10",
-      "badgeUrl": "/assets/certs/aws.svg",
-      "verifyUrl": "https://example.com/verify/aws-dev"
-    },
-    {
-      "title": "CKA - Certified Kubernetes Administrator",
-      "issuer": "The Linux Foundation",
-      "date": "2025-07",
-      "badgeUrl": "/assets/certs/cka.svg",
-      "verifyUrl": "https://example.com/verify/cka"
-    },
-    {
-      "title": "HashiCorp Terraform Associate",
-      "issuer": "HashiCorp",
-      "date": "2024-12",
-      "badgeUrl": "/assets/certs/terraform.svg",
-      "verifyUrl": "https://example.com/verify/terraform"
+      "title": "AWS Certified AI Practitioner",
+      "issuer": "AWS Academy",
+      "date": " ",
+      "badgeUrl": "/assets/certs/CIP.png",
+      "verifyUrl": "https://aws.amazon.com/certification/certified-ai-practitioner/"
     }
   ],
   "courses": [
     {
-      "title": "Arquitetura de Sistemas Distribuídos",
-      "platform": "Alura",
+      "title": "AWS Cloud Club Captain: Bronze Level",
+      "platform": "AWS Community",
+      "date": "2026-03",
+      "hours": 0,
+      "certificateUrl": "https://www.credly.com/badges/4285a6d7-f031-4759-abdc-788550b8485a",
+      "coverUrl": "/assets/courses/BCCC.png"
+    },
+    {
+      "title": "AWS Cloud Club Captain",
+      "platform": "AWS Community",
       "date": "2025-11",
+      "hours": 0,
+      "certificateUrl": "https://www.credly.com/badges/12bb75ed-6081-401e-83b6-1e3eaac0d6fe",
+      "coverUrl": "/assets/courses/CCC.png"
+    },
+    {
+      "title": "Cloud Computing Foundations - Training",
+      "platform": "AWS Academy",
+      "date": "2025-02",
+      "hours": 30,
+      "certificateUrl": "https://www.credly.com/badges/dfaab019-f0e5-4fb5-8240-ce287f9e3b23",
+      "coverUrl": "/assets/courses/CLF.png"
+    },
+    {
+      "title": "Python Essentials",
+      "platform": "Cisco Academy",
+      "date": "2023-11",
       "hours": 24,
-      "certificateUrl": "https://example.com/cert/distribuidos",
-      "coverUrl": "/assets/courses/c1.svg"
+      "certificateUrl": "https://www.credly.com/badges/d150b970-61e2-402c-9699-554f7a048189",
+      "coverUrl": "/assets/courses/cisco-py.png"
     },
     {
-      "title": "Kubernetes Security Specialist",
-      "platform": "Udemy",
-      "date": "2025-08",
-      "hours": 18,
-      "certificateUrl": "https://example.com/cert/k8s-security",
-      "coverUrl": "/assets/courses/c2.svg"
+      "title": "Fundamentos do Hardware do Computador",
+      "platform": "Cisco Academy",
+      "date": "2025-02",
+      "hours": 20,
+      "certificateUrl": "https://www.credly.com/badges/33396a73-4211-46ed-8171-8a55edce3b69",
+      "coverUrl": "/assets/courses/cisco-hard.png"
     },
     {
-      "title": "Advanced TypeScript Patterns",
-      "platform": "Frontend Masters",
-      "date": "2025-05",
+      "title": "Defesa de Redes",
+      "platform": "Cisco Academy",
+      "date": "2025-04",
+      "hours": 22,
+      "certificateUrl": "https://www.credly.com/badges/f22a9ff2-b014-48e5-a468-b14ff884a8bc",
+      "coverUrl": "/assets/courses/cisco-cs.png"
+    },
+    {
+      "title": "Git/GitHub - Módulos Extras",
+      "platform": "Infinity School",
+      "date": "2023-10",
       "hours": 10,
-      "certificateUrl": "https://example.com/cert/ts-patterns",
-      "coverUrl": "/assets/courses/c3.svg"
-    },
-    {
-      "title": "SRE Fundamentals",
-      "platform": "Coursera",
-      "date": "2024-12",
-      "hours": 16,
-      "certificateUrl": "https://example.com/cert/sre",
-      "coverUrl": "/assets/courses/c4.svg"
+      "certificateUrl": "https://www.credly.com/users/marcos-paulo-teles-de-menezes-filho/badges#credly",
+      "coverUrl": "/assets/courses/git.png"
     }
   ],
   "contact": {
