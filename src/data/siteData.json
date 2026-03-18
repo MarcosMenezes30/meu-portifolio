@@ -8,7 +8,7 @@
       "text": "🟢 Disponível para novos projetos"           
     },
     "heroDescription": "Transformo ideias em produtos digitais completos. Construo plataformas full stack com foco em qualidade, performance e experiência do usuário, do frontend ao backend.",
-    "heroTags": ["Full Stack", "React", "Node.js", "TypeScript", "Integração PIX", "Web Components", "Design", "Performance", "Lider do AWS Cloud Club"],
+    "heroTags": ["Full Stack Vibe coding", "Vite", "Database", "Integração PIX", "Web Components", "Design", "Supabase", "Lider do AWS Cloud Club"],
     "photoUrl": "/assets/profile.png",
     "social": {
       "github": "https://github.com/MarcosMenezes30",
@@ -197,7 +197,7 @@
       "title": "Cloud Computing Foundations - Training",
       "platform": "AWS Academy",
       "date": "2025-02",
-      "hours": 30,
+      "hours": 20,
       "certificateUrl": "https://www.credly.com/badges/dfaab019-f0e5-4fb5-8240-ce287f9e3b23",
       "coverUrl": "/assets/courses/CLF.png"
     },
@@ -205,7 +205,7 @@
       "title": "Python Essentials",
       "platform": "Cisco Academy",
       "date": "2023-11",
-      "hours": 24,
+      "hours": 30,
       "certificateUrl": "https://www.credly.com/badges/d150b970-61e2-402c-9699-554f7a048189",
       "coverUrl": "/assets/courses/cisco-py.png"
     },
@@ -213,7 +213,7 @@
       "title": "Fundamentos do Hardware do Computador",
       "platform": "Cisco Academy",
       "date": "2025-02",
-      "hours": 20,
+      "hours": 6,
       "certificateUrl": "https://www.credly.com/badges/33396a73-4211-46ed-8171-8a55edce3b69",
       "coverUrl": "/assets/courses/cisco-hard.png"
     },
@@ -221,7 +221,7 @@
       "title": "Defesa de Redes",
       "platform": "Cisco Academy",
       "date": "2025-04",
-      "hours": 22,
+      "hours": 27,
       "certificateUrl": "https://www.credly.com/badges/f22a9ff2-b014-48e5-a468-b14ff884a8bc",
       "coverUrl": "/assets/courses/cisco-cs.png"
     },
@@ -229,7 +229,7 @@
       "title": "Git/GitHub - Módulos Extras",
       "platform": "Infinity School",
       "date": "2023-10",
-      "hours": 10,
+      "hours": 24,
       "certificateUrl": "https://www.credly.com/users/marcos-paulo-teles-de-menezes-filho/badges#credly",
       "coverUrl": "/assets/courses/git.png"
     }

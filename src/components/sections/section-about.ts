@@ -80,7 +80,7 @@ export class SectionAbout extends HTMLElement {
           .map(
             (item) => `
               <div data-reveal>
-                <base-card interactive breath>
+                <base-card pill-hover breath>
                   <article class="card">
                     <icon-svg name="${item.icon}" size="22"></icon-svg>
                     <h3>${item.title}</h3>
