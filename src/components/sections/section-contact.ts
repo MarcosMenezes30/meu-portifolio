@@ -155,7 +155,7 @@ export class SectionContact extends HTMLElement {
               <label>E-mail<input name="email" type="email" required autocomplete="email" /></label>
               <label>Assunto<input name="subject" required /></label>
               <label>Mensagem<textarea name="message" required></textarea></label>
-              <base-button variant="primary" type="submit">Enviar Mensagem</base-button>
+              <base-button id="contact-submit" variant="primary" type="submit">Enviar Mensagem</base-button>
             </form>
           </base-card>
         </div>
@@ -175,7 +175,11 @@ export class SectionContact extends HTMLElement {
     const form = this.shadowRootRef.getElementById('contact-form') as HTMLFormElement | null;
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
-      this.submitForm(form);
+      void this.submitForm(form);
+    });
+
+    this.shadowRootRef.getElementById('contact-submit')?.addEventListener('click', () => {
+      form?.requestSubmit();
     });
 
     this.cleanupReveal = setupReveal(this.shadowRootRef, { reducedMotion: prefersReducedMotion() });
