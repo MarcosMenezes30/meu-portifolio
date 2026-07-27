@@ -60,16 +60,128 @@ h1 {
   margin-top: 1.35rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
+  gap: 0.75rem;
 }
-.metric {
+.metric-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 1.1rem 1.25rem 0.9rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  cursor: default;
+  transition: transform 300ms var(--ease-out), border-color 300ms, box-shadow 300ms;
+}
+.metric-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 300ms var(--ease-out);
+  pointer-events: none;
+}
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.35);
+}
+/* Shimmer sweep on hover */
+.metric-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.05) 50%, transparent 60%);
+  transition: left 500ms var(--ease-out);
+  pointer-events: none;
+}
+.metric-card:hover::after { left: 160%; }
+
+/* Per-card accent */
+.metric-card[data-accent="clock"]:hover { border-color: rgba(59,130,246,0.35); }
+.metric-card[data-accent="clock"]::before { background: radial-gradient(ellipse at 0% 100%, rgba(59,130,246,0.10) 0%, transparent 70%); }
+.metric-card[data-accent="clock"]:hover::before { opacity: 1; }
+.metric-card[data-accent="clock"] .metric-icon { color: #3b82f6; background: rgba(59,130,246,0.12); }
+.metric-card[data-accent="clock"] .metric-bar-fill { background: #3b82f6; box-shadow: 0 0 8px rgba(59,130,246,0.6); }
+
+.metric-card[data-accent="code"]:hover { border-color: rgba(124,58,237,0.35); }
+.metric-card[data-accent="code"]::before { background: radial-gradient(ellipse at 0% 100%, rgba(124,58,237,0.10) 0%, transparent 70%); }
+.metric-card[data-accent="code"]:hover::before { opacity: 1; }
+.metric-card[data-accent="code"] .metric-icon { color: #7c3aed; background: rgba(124,58,237,0.12); }
+.metric-card[data-accent="code"] .metric-bar-fill { background: #7c3aed; box-shadow: 0 0 8px rgba(124,58,237,0.6); }
+
+.metric-card[data-accent="hourglass"]:hover { border-color: rgba(249,115,22,0.35); }
+.metric-card[data-accent="hourglass"]::before { background: radial-gradient(ellipse at 0% 100%, rgba(249,115,22,0.10) 0%, transparent 70%); }
+.metric-card[data-accent="hourglass"]:hover::before { opacity: 1; }
+.metric-card[data-accent="hourglass"] .metric-icon { color: #f97316; background: rgba(249,115,22,0.12); }
+.metric-card[data-accent="hourglass"] .metric-bar-fill { background: #f97316; box-shadow: 0 0 8px rgba(249,115,22,0.6); }
+
+.metric-card[data-accent="users"]:hover { border-color: rgba(34,197,94,0.35); }
+.metric-card[data-accent="users"]::before { background: radial-gradient(ellipse at 0% 100%, rgba(34,197,94,0.10) 0%, transparent 70%); }
+.metric-card[data-accent="users"]:hover::before { opacity: 1; }
+.metric-card[data-accent="users"] .metric-icon { color: #22c55e; background: rgba(34,197,94,0.12); }
+.metric-card[data-accent="users"] .metric-bar-fill { background: #22c55e; box-shadow: 0 0 8px rgba(34,197,94,0.6); }
+
+.metric-top {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
-.metric .value {
-  font-size: 1.3rem;
-  font-weight: 700;
+.metric-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 300ms var(--ease-out);
+}
+.metric-card:hover .metric-icon { transform: scale(1.1) rotate(-4deg); }
+.metric-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform 200ms var(--ease-out);
+}
+.metric-card:hover .metric-value { transform: scale(1.04); }
+.metric-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+.metric-bar {
+  margin-top: 0.85rem;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  overflow: hidden;
+}
+.metric-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  width: 0%;
+  transition: width 900ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .metric-card { transition: none; }
+  .metric-bar-fill { transition: none; width: var(--bar-target, 75%); }
 }
 .hero-visual {
   position: relative;
@@ -258,16 +370,19 @@ export class SectionHero extends HTMLElement {
       <div class="metrics" data-reveal>
         ${metricsHero
           .map(
-            (metric) => `
-              <base-card>
-                <div class="metric">
-                  <icon-svg name="${metric.icon}" size="20"></icon-svg>
-                  <div>
-                    <div class="value" data-counter="${metric.value}" data-suffix="${metric.suffix}">0${metric.suffix}</div>
-                    <small>${metric.label}</small>
+            (metric, idx) => `
+              <div class="metric-card" data-accent="${metric.icon}" data-metric-idx="${idx}">
+                <div class="metric-top">
+                  <div class="metric-icon">
+                    <icon-svg name="${metric.icon}" size="17"></icon-svg>
                   </div>
+                  <div class="metric-value" data-counter="${metric.value}" data-suffix="${metric.suffix}">0${metric.suffix}</div>
                 </div>
-              </base-card>
+                <div class="metric-label">${metric.label}</div>
+                <div class="metric-bar">
+                  <div class="metric-bar-fill" style="--bar-target:${Math.min(95, 40 + idx * 18)}%"></div>
+                </div>
+              </div>
             `,
           )
           .join('')}
@@ -280,10 +395,10 @@ export class SectionHero extends HTMLElement {
 
     right.innerHTML = `
       <div class="ring" aria-hidden="true">
-        <span class="orb"><icon-svg name="code" size="17"></icon-svg></span>
+        <span class="orb"><icon-svg name="python" size="17"></icon-svg></span>
         <span class="orb"><icon-svg name="aws" size="17"></icon-svg></span>
-        <span class="orb"><icon-svg name="robot" size="17"></icon-svg></span>
-        <span class="orb"><icon-svg name="brain" size="17"></icon-svg></span>
+        <span class="orb"><icon-svg name="codeBrackets" size="17"></icon-svg></span>
+        <span class="orb"><icon-svg name="git" size="17"></icon-svg></span>
       </div>
       <figure class="photo-wrap">
         <img src="${profile.photoUrl}" alt="Foto de ${profile.name}" />

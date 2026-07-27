@@ -43,6 +43,15 @@ export interface ContentCard {
   text: string;
 }
 
+export interface JourneyItem {
+  title: string;
+  period: string;
+  icon: string;
+  accent: 'blue' | 'purple' | 'orange' | 'green';
+  description: string;
+  tags: string[];
+}
+
 export interface ProjectCategory {
   id: string;
   label: string;
@@ -93,7 +102,7 @@ export interface SiteData {
     };
   };
   metricsHero: MetricItem[];
-  aboutCards: ContentCard[];
+  journey: JourneyItem[];
   values: ContentCard[];
   projects: {
     categories: ProjectCategory[];

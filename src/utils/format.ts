@@ -6,6 +6,7 @@ export function formatMonthYear(value: string): string {
   return new Intl.DateTimeFormat('pt-BR', {
     month: 'short',
     year: 'numeric',
+    timeZone: 'UTC',
   }).format(date);
 }
 

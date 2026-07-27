@@ -12,7 +12,7 @@ function hasRequiredTopLevel(value: unknown): value is SiteData {
     'profile',
     'nav',
     'metricsHero',
-    'aboutCards',
+    'journey',
     'values',
     'projects',
     'skills',

@@ -2,18 +2,18 @@
   "profile": {
     "name": "Marcos Menezes",
     "role": "Estudante de Engenharia da Computação",
-    "tagline": "AWS Cloud Club Captain",
+    "tagline": "AWS Builder Campus & Student Group Leader",
     "availability": {
       "enabled": true,
       "text": "🟢 Disponível para novos projetos"           
     },
-    "heroDescription": "Transformo ideias em produtos digitais completos. Construo plataformas full stack com foco em qualidade, performance e experiência do usuário, do frontend ao backend.",
-    "heroTags": ["Full Stack Vibe coding", "Vite", "Database", "Integração PIX", "Web Components", "Design", "Supabase", "Lider do AWS Cloud Club"],
-    "photoUrl": "/assets/profile.png",
+    "heroDescription": "Projeto arquiteturas de sistemas autônomos, integrando visão computacional, fusão de sensores e algoritmos preditivos para rastreamento espacial utilizando Python e C.  Em paralelo, desenvolvo aplicações full-stack e plataformas web, garantindo performance e experiência do usuário de ponta a ponta.",
+    "heroTags": ["AWS Builder Student Campus Leader", "AWS Student Builder Group Leader", "Artificial Intelligence and Big Data Senai Cimatec Intern", "Software Engineering Student"],
+    "photoUrl": "/assets/profile.jpg",
     "social": {
       "github": "https://github.com/MarcosMenezes30",
-      "linkedin": "www.linkedin.com/in/marcos-menezes-27354a263",
-      "email": "mailto:marcos.p.filho@aln.senaicimatec.edu.br",
+      "linkedin": "https://www.linkedin.com/in/marcos-menezes-27354a263",
+      "email": "marcos.p.filho@aln.senaicimatec.edu.br",
       "instagram": "https://instagram.com/menezss.marcos",
       "website": "https://marcostelesdemenezes.vercel.app/"
     },
@@ -24,7 +24,7 @@
   },
   "nav": {
     "items": [
-      { "id": "sobre", "label": "Sobre", "icon": "user" },
+      { "id": "sobre", "label": "Minha Jornada", "icon": "history" },
       { "id": "valores", "label": "Valores", "icon": "target" },
       { "id": "projetos", "label": "Projetos", "icon": "briefcase" },
       { "id": "skills", "label": "Skills", "icon": "cpu" },
@@ -35,26 +35,43 @@
     "cta": { "label": "Fale Comigo", "mode": "whatsapp" }
   },
   "metricsHero": [
-    { "label": "Anos de Experiência", "value": 2, "suffix": "+", "icon": "clock" },
-    { "label": "Projetos Entregues", "value": 3, "suffix": "", "icon": "code" },
-    { "label": "Em Desenvolvimento", "value": 2, "suffix": "", "icon": "rocket" },
-    { "label": "Comunidade AWS Liderada", "value": 1, "suffix": "", "icon": "users" }
+    { "label": "Anos de Experiência", "value": 1, "suffix": "+", "icon": "clock" },
+    { "label": "Projetos Entregues", "value": 6, "suffix": "", "icon": "code" },
+    { "label": "Projetos Em Desenvolvimento", "value": 1, "suffix": "", "icon": "hourglass" },
+    { "label": "Grupos AWS Liderados", "value": 2, "suffix": "", "icon": "users" }
   ],
-  "aboutCards": [
+  "journey": [
     {
-      "title": "Minha História",
-      "icon": "history",
-      "text": "Estudante de Engenharia da Computação na SENAI CIMATEC com paixão por desenvolvimento de software. Comecei praticando com projetos pessoais e evoluí para soluções completas que entregam valor real e impacto para negócios."
+      "title": "O Começo",
+      "period": "2023.2",
+      "icon": "graduation",
+      "accent": "blue",
+      "description": "Ingressei no SENAI CIMATEC para cursar Engenharia da Computação — o ponto de partida de uma jornada de aprendizado contínuo, desafios técnicos e construção de fundamentos sólidos em computação e engenharia de sistemas.",
+      "tags": ["Engenharia da Computação", "SENAI CIMATEC", "2023.2"]
     },
     {
-      "title": "Presente",
-      "icon": "settings",
-      "text": "Desenvolvo produtos digitais full stack com foco em qualidade e performance. Líder do AWS Cloud Club SENAI CIMATEC, onde compartilho conhecimento sobre computação em nuvem e coordeno eventos e mentorias para a comunidade."
+      "title": "Robótica e Sistemas Autônomos",
+      "period": "Ago 2025 → Jan 2026",
+      "icon": "cpu",
+      "accent": "purple",
+      "description": "Bolsista no Centro de Competência em Robótica e Sistemas Autônomos do SENAI CIMATEC. Desenvolvi pesquisa científica sobre métodos inovadores de cálculo de parâmetros hidrodinâmicos para simulação realista de ROVs (Remotely Operated Vehicles) em ambiente submarino.",
+      "tags": ["Robótica", "ROV", "Simulação", "Pesquisa Científica", "Sistemas Autônomos"]
     },
     {
-      "title": "Futuro",
-      "icon": "rocket",
-      "text": "Especializando-me em desenvolvimento de plataformas escaláveis e arquiteturas de software robustas. Objetivo crescer como engenheiro full stack e continuar criando soluções inovadoras que levem impacto positivo e gerem valor."
+      "title": "AWS Builder Student & Campus Leader",
+      "period": "Nov 2026 → Presente",
+      "icon": "users",
+      "accent": "orange",
+      "description": "Fundei a primeira iniciativa estudantil oficial da AWS no Nordeste e me tornei embaixador da AWS. Com o objetivo de promover conhecimento, capacitar pessoas e conectar alunos e colaboradores ao ecossistema AWS, lidero eventos, workshops e mentorias para a comunidade tech.",
+      "tags": ["AWS", "Builder Student", "Campus Leader", "Comunidade", "Cloud Computing"]
+    },
+    {
+      "title": "Inteligência Artificial e Big Data",
+      "period": "Ago 2026 → Presente",
+      "icon": "spark",
+      "accent": "green",
+      "description": "Bolsista na área de Inteligência Artificial e Big Data no SENAI CIMATEC. Atuo no desenvolvimento de algoritmos de fusão de dados, manipulando dados com Python e C, e aprofundo estudos em IA, modelos LLM, Agentes Inteligentes e Redes Neurais.",
+      "tags": ["Inteligência Artificial", "Big Data", "Python", "C", "LLM", "Redes Neurais", "Agentes"]
     }
   ],
   "values": [
@@ -94,17 +111,18 @@
       { "id": "all", "label": "Todos" },
       { "id": "concluidoOuEmDesenvolvimento", "label": "Concluído" },
       { "id": "emDesenvolvimento", "label": "Em Desenvolvimento" },
+      { "id": "ia", "label": "IA & Robótica" },
       { "id": "fullstack", "label": "Full Stack" },
       { "id": "frontend", "label": "Frontend" }
     ],
     "items": [
       {
         "id": "proj-1",
-        "title": "AWS Cloud Club SENAI CIMATEC - Website",
-        "description": "Site oficial do AWS Cloud Club, vitrine da comunidade de estudos em computação em nuvem com foco em tecnologias AWS e eventos educacionais.",
+        "title": "AWS Student Builder Group SENAI CIMATEC - WebSite",
+        "description": "Site oficial da iniciativa estudantil oficial da AWS, vitrine da comunidade de estudos em computação em nuvem com foco em tecnologias AWS e eventos educacionais.",
         "categoryIds": ["concluidoOuEmDesenvolvimento", "frontend"],
         "techTags": ["Frontend", "Design", "Web Components"],
-        "imageUrl": "/assets/projects/aws-wb.png",
+        "imageUrl": "/assets/projects/aws-student-builder-group.png",
         "repoUrl": "https://github.com/MarcosMenezes30/aws-cloud-club-senai-cimatec-website",
         "liveUrl": "https://awsclubsenai.com.br",
         "featured": true
@@ -115,20 +133,39 @@
         "description": "Portfólio web com design moderno e performance otimizada, construído com Web Components e TypeScript. Showcase de projetos, skills e certificações.",
         "categoryIds": ["concluidoOuEmDesenvolvimento", "frontend"],
         "techTags": ["Web Components", "TypeScript", "Performance"],
-        "imageUrl": "/assets/projects/portifolio.png",
+        "imageUrl": "/assets/projects/portfolio-hero.png",
         "repoUrl": "https://github.com/MarcosMenezes30/meu-portifolio",
         "liveUrl": "https://marcostelesdemenezes.vercel.app",
         "featured": true
       },
       {
-        "id": "proj-3",
-        "title": "Landing Page - Instrumentos Médicos",
-        "description": "Landing page responsiva e de alta conversão para empresa de venda de instrumentos médicos, com design profissional e otimização para SEO.",
-        "categoryIds": ["concluidoOuEmDesenvolvimento", "frontend"],
-        "techTags": ["Frontend", "Responsivo", "SEO"],
-        "imageUrl": "/assets/projects/instmed.png",
-        "repoUrl": "https://github.com/MarcosMenezes30/precision-med-solutions",
-        "liveUrl": "https://jcimplantes.lovable.app/",
+        "id": "proj-vc",
+        "title": "Detecção de Formas Geométricas com OpenCV",
+        "description": "Projeto de visão computacional em Python e OpenCV para detecção, binarização, cálculo de vértices e classificação automática de figuras geométricas (triângulos, quadrados, retângulos, pentágonos, estrelas e círculos).",
+        "categoryIds": ["concluidoOuEmDesenvolvimento", "ia"],
+        "techTags": ["Python", "OpenCV", "Visão Computacional", "NumPy"],
+        "imageUrl": "/assets/projects/opencv-shapes.png",
+        "repoUrl": "https://github.com/MarcosMenezes30/Identifica-o_de_formas_geometricas_python_opencv/tree/main",
+        "featured": true
+      },
+      {
+        "id": "proj-sentiment",
+        "title": "Análise de Sentimento em Português com NLP",
+        "description": "Sistema de Inteligência Artificial para classificação automatizada de sentimentos em textos em português (positivo, negativo, neutro) com NLP, TF-IDF, Logistic Regression e interface Streamlit.",
+        "categoryIds": ["concluidoOuEmDesenvolvimento", "ia"],
+        "techTags": ["Python", "NLP", "Machine Learning", "Streamlit", "scikit-learn"],
+        "imageUrl": "/assets/projects/sentiment-nlp.png",
+        "repoUrl": "https://github.com/MarcosMenezes30/Analise-de-sentimento",
+        "featured": true
+      },
+      {
+        "id": "proj-rag",
+        "title": "Sistema de Perguntas e Respostas com RAG",
+        "description": "Sistema de IA com busca semântica em base de conhecimento utilizando Retrieval-Augmented Generation (RAG), vetorização de texto com Hugging Face, indexação vetorial FAISS e interface Streamlit.",
+        "categoryIds": ["concluidoOuEmDesenvolvimento", "ia"],
+        "techTags": ["Python", "RAG", "FAISS", "LangChain", "Hugging Face", "Streamlit"],
+        "imageUrl": "/assets/projects/rag-faiss.png",
+        "repoUrl": "https://github.com/MarcosMenezes30/projeto_rag",
         "featured": true
       },
       {
@@ -140,16 +177,6 @@
         "imageUrl": "/assets/projects/embreve.png",
         "repoUrl": "https://github.com/MarcosMenezes30",
         "featured": true
-      },
-      {
-        "id": "proj-5",
-        "title": "Plataforma de Barbearia",
-        "description": "Sistema completo para gerenciamento de barbearia com integração de pagamento PIX, controle de agendamentos, emissão de notas fiscais, dashboard de balanço financeiro e painéis separados para administrador e usuário cliente.",
-        "categoryIds": ["emDesenvolvimento", "fullstack"],
-        "techTags": ["Node.js", "TypeScript", "React", "Supabase", "PIX", "Agendamentos"],
-        "imageUrl": "/assets/projects/embreve.png",
-        "repoUrl": "https://github.com/MarcosMenezes30",
-        "featured": true
       }
     ]
   },
@@ -158,7 +185,11 @@
     { "name": "Docker", "iconUrl": "/assets/skills/docker-icon.png", "description": "Utilização de contêineres" },
     { "name": "Git/GitHub", "iconUrl": "/assets/skills/github-icon.png", "description": "Versionamento de código e documentação" },
     { "name": "ROS 2", "iconUrl": "/assets/skills/ros2-icon.png", "description": "Framework para desenvolvimento de robôs" },
-    { "name": "Supabase", "iconUrl": "/assets/skills/supabase-icon.jpg", "description": "Backend para o desenvolvimento de aplicações web" }
+    { "name": "Python", "iconUrl": "/assets/skills/python-icon.png", "description": "Linguagem principal de dados e IA" },
+    { "name": "C", "iconUrl": "/assets/skills/c-icon.png", "description": "Programação de baixo nível e sistemas embarcados" },
+    { "name": "APIs e Integrações", "iconUrl": "/assets/skills/api-icon.png", "description": "Consumo e criação de APIs REST e integrações" },
+    { "name": "SQL", "iconUrl": "/assets/skills/sql-icon.png", "description": "Modelagem e consultas em bancos relacionais" },
+    { "name": "NoSQL", "iconUrl": "/assets/skills/nosql-icon.png", "description": "Bancos de dados não relacionais (MongoDB, DynamoDB)" }
   ],
   "certifications": [
     {
@@ -174,9 +205,32 @@
       "date": " ",
       "badgeUrl": "/assets/certs/CIP.png",
       "verifyUrl": "https://aws.amazon.com/certification/certified-ai-practitioner/"
+    },
+    {
+      "title": "GitHub Foundations Certification",
+      "issuer": "GitHub",
+      "date": " ",
+      "badgeUrl": "/assets/certs/github-foundations.png",
+      "verifyUrl": "https://education.github.com/experiences/foundations_certificate"
     }
   ],
   "courses": [
+    {
+      "title": "AWS Cloud Club Captain: Gold Level",
+      "platform": "AWS Community",
+      "date": "2026-06",
+      "hours": 0,
+      "certificateUrl": "https://www.credly.com/badges/e39c9836-46fb-4f3d-adfb-f4dba3597b76/public_url",
+      "coverUrl": "/assets/courses/GCCC.png"
+    },
+    {
+      "title": "AWS Cloud Club Captain: Silver Level",
+      "platform": "AWS Community",
+      "date": "2026-04",
+      "hours": 0,
+      "certificateUrl": "https://www.credly.com/earner/earned/badge/3943b293-a908-4d06-a10a-e460579a2a3e",
+      "coverUrl": "/assets/courses/SCCC.png"
+    },
     {
       "title": "AWS Cloud Club Captain: Bronze Level",
       "platform": "AWS Community",
@@ -226,7 +280,7 @@
       "coverUrl": "/assets/courses/cisco-cs.png"
     },
     {
-      "title": "Git/GitHub - Módulos Extras",
+      "title": "Git/GitHub",
       "platform": "Infinity School",
       "date": "2023-10",
       "hours": 24,
